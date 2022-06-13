@@ -18,7 +18,7 @@ h2, p {
     color: white; 
 }
 
-.search {
+.search-input {
     position: absolute;
     right: 20px;
     top: 160px;
@@ -53,7 +53,7 @@ input[type="text"] {
     font-size: 1.5em; 
 }
 
-.movie-area {
+.movie-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,17 +61,17 @@ input[type="text"] {
     align-items: center;
 }
 
-.movie-cell {
+.movie-card {
     max-width: 268px;
     margin: 15px 8px 0px 8px;
 }
 
-.poster {
+.movie-poster {
     height: 402px; 
     width: auto;
 }
 
-.poster:hover{
+.movie-poster:hover{
     box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
@@ -89,7 +89,7 @@ input[type="text"] {
     color: white;
 }
 
-#clear-btn {
+#close-search-btn {
     margin-bottom: 15px;
 }
 
