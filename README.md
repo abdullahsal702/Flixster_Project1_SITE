@@ -4,8 +4,6 @@ Submitted by: **Abdullah Saleh**
 
 Estimated time spent: **8** hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
-
 ### Application Features
 
 #### CORE FEATURES
