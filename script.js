@@ -1,9 +1,9 @@
 //DOM
 nowPlayingLabel = document.querySelector(".now-playing-label")
-movieArea = document.querySelector(".movie-area")
-moreBtn = document.querySelector("#more-btn")
+movieArea = document.querySelector(".movie-grid")
+moreBtn = document.querySelector("#load-more-movies-btn")
 formElement = document.querySelector("form")
-clearBtn = document.querySelector("#clear-btn")
+clearBtn = document.querySelector("#close-search-btn")
 
 //parameters for movies now playing - api_key, language, page 
 //each page returns 20 movies 
@@ -29,9 +29,9 @@ async function getResults(evt) {
 
     evt.preventDefault() 
 
-    if (evt.target.id == "clear-btn"){
+    if (evt.target.id == "close-search-btn"){
         page = 1
-        let moviesDisplayed = document.querySelectorAll(".movie-cell")
+        let moviesDisplayed = document.querySelectorAll(".movie-card")
         moviesDisplayed.forEach((movie) => {
             movie.remove()
         })
@@ -43,12 +43,12 @@ async function getResults(evt) {
 
     let url = ""
 
-    if (evt.target.className == "search"){
+    if (evt.target.className == "search-input"){
         clearBtn.classList.remove("hidden")
         nowPlayingLabel.classList.add("hidden")
         console.log(nowPlayingLabel.classList)
         page = 1
-        let moviesDisplayed = document.querySelectorAll(".movie-cell")
+        let moviesDisplayed = document.querySelectorAll(".movie-card")
         moviesDisplayed.forEach((movie) => {
             movie.remove()
         })
@@ -77,21 +77,24 @@ function displayResults(responseData) {
         //accounts for a movie not having a poster image
         if (data.poster_path == null) {
             movieArea.innerHTML += `
-            <div class="movie-cell">
+            <div class="movie-card">
                 <img class="blank-poster" src="assets/no-image.png" width="500 alt="movie-poster" />
-                <p>Rating: ${data.vote_average}</p>
-                <p>${data.original_title}</p>
+                <div class="class="movie-votes"">
+                    <img class="rating-icon" src="assets/star.png" alt="star-icon" />
+                    <span class="rating-txt">${data.vote_average}</span>
+                </div>
+                <p class="movie-title">${data.original_title}</p>
             </div> 
             `
         } else {
             movieArea.innerHTML += `
-            <div class="movie-cell">
-                <img class="poster" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="movie-poster" />
-                <div class="rating">
+            <div class="movie-card">
+                <img class="movie-poster" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="movie-poster" />
+                <div class="class="movie-votes"">
                     <img class="rating-icon" src="assets/star.png" alt="star-icon" />
                     <span class="rating-txt">${data.vote_average}</span>
                 </div>
-                <p>${data.original_title}</p>
+                <p class="movie-title">${data.original_title}</p>
             </div> 
             `
         }
