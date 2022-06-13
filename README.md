@@ -42,21 +42,21 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
 
-[`ADD_EMBEDDED_CODE_HERE`](http://g.recordit.co/4Drc3KkzZG.gif)
+[`Video Walkthrough Link`](http://g.recordit.co/4Drc3KkzZG.gif)
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+The labs definitely prepared me for the final project. From the labs I was able to learn how to inject HTML with Javascript, work with APIs and make my website more responsive. After the labs I didn't feel unprepared for any of the features. 
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+I would've included a modal component that displays movie information. I would have also changed up the styling and put a little more focus on the CSS. 
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+I think my project demo went well. Its cool to see what my peers have done because some of their websites have really creative designs and functionality.
 
 ### Open-source libraries used
 
@@ -65,3 +65,5 @@ Add your response here
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+Shout out to Doug and Amantina for helping me out. 
